@@ -51,6 +51,24 @@ These programs are useful for learning, practice, and academic purposes.
 - Determines minimum coins required for a given amount
 - Uses Dynamic Programming / Greedy approach
 
+### 10. DFS.cpp
+
+Depth-First Search (DFS) for graphs
+
+Explores as far as possible along each branch before backtracking
+
+Implemented using recursion
+
+Useful for graph traversal, cycle detection, and connected components
+
+### 11. BFS.cpp
+
+Breadth-First Search (BFS) for graphs
+
+Explores nodes level by level using a queue
+
+Useful for shortest path in unweighted graphs and level-order traversal
+
 ---
 
 ## 🛠 Language Used
