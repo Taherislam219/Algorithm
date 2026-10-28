@@ -1,63 +1,80 @@
-#  Algorithms in C++
+# Algorithms in C++
 
-This repository contains my practice codes and implementations of different  Algorithms using C++. I created it to improve my problem-solving skills and understand how different algorithms work through coding.
+A collection of C++ practice programs covering data structures, graph algorithms, dynamic programming, and greedy techniques. This repository is part of my learning journey as a Computer Science and Engineering student.
 
-I will keep adding new programs as I learn more topics.
+The goal is to understand each idea by implementing it, running examples, and improving the code over time. Suggestions and constructive feedback are welcome.
 
-## Topics Covered
+## Topics and source files
 
-### 1. Dynamic Programming
-- **Longest Common Subsequence (LCS)** – Finds the longest subsequence common to two strings.
-- **Longest Increasing Subsequence (LIS)** – Finds the longest increasing subsequence in an array.
-- **Edit Distance (Minimum Edit Distance)** – Calculates the minimum number of operations needed to convert one string into another.
-- **0/1 Knapsack** – Finds the maximum profit possible within a given weight capacity.
-- **Coin Change** – Finds the minimum number of coins needed to make a given amount.
+| Topic | File |
+|---|---|
+| Breadth-first search (BFS) | `BFS.cpp` |
+| Depth-first search (DFS) | `DFS.cpp` |
+| Dijkstra's shortest-path algorithm | `Dijkstra.cpp` |
+| Bellman–Ford shortest-path algorithm | `Bellman-ford.cpp` |
+| Floyd–Warshall all-pairs shortest paths | `Folyed-warshell.cpp` |
+| Prim's minimum spanning tree | `Priems Mst.cpp` |
+| Kruskal's minimum spanning tree | `krushk’s.cpp` |
+| Binary search tree (BST) | `BST.cpp` |
+| Longest common subsequence (LCS) | `LCS.cpp` |
+| Longest increasing subsequence (LIS) | `LIS.cpp` |
+| Edit distance | `MinimumED.cpp` |
+| Knapsack (dynamic programming) | `Knapscak dynamic.cpp` |
+| Knapsack (greedy/fractional practice) | `Factorial Knapsack.cpp` |
+| Coin change | `coin.cpp` |
+| Additional DP practice | `LED.cpp` |
 
-### 2. Greedy Algorithms
-- **Fractional Knapsack** – Selects items based on their profit-to-weight ratio to maximize profit.
+> File names are kept as they currently exist in the repository. Some names may be renamed for clarity in a future cleanup.
 
-### 3. Graph Algorithms
-- **BFS (Breadth-First Search)** – Traverses a graph level by level.
-- **DFS (Depth-First Search)** – Traverses a graph by exploring as far as possible along each path.
-- **Dijkstra's Algorithm** – Finds shortest paths from a source vertex in a graph with non-negative edge weights.
-- **Bellman-Ford Algorithm** – Finds shortest paths and can detect reachable negative-weight cycles with an additional check.
-- **Floyd-Warshall Algorithm** – Finds shortest paths between all pairs of vertices.
-- **Prim's Algorithm** – Builds a minimum spanning tree by selecting the minimum-weight connecting edge.
-- **Kruskal's Algorithm** – Builds a minimum spanning tree by selecting edges in increasing order of weight.
+## Requirements
 
-### 4. Other Algorithms and Data Structures
-- **Binary Search Tree (BST)** – Implements insertion, searching, and preorder traversal.
+- A C++ compiler, such as **g++**
+- A terminal or IDE that can compile and run C++ programs
 
-## How to Run the Programs
-
-You need a C++ compiler, such as `g++`, to run these programs.
-
-1. Clone this repository or download the source files.
-2. Open the project folder in your terminal.
-3. Compile the file you want to run.
-4. Execute the generated program.
-
-For example, to run `LCS.cpp`:
+Check that your compiler is available:
 
 ```bash
-g++ LCS.cpp -o LCS
-./LCS
+g++ --version
 ```
 
-On Windows, run the compiled program using:
+## Compile and run a program
+
+Each `.cpp` file is a separate practice program. From the repository folder, compile the file you want to try. For example:
 
 ```bash
-LCS.exe
+g++ -std=c++17 LCS.cpp -o lcs
+./lcs
 ```
 
-Some programs require input from the user, so enter the values according to the prompts or the input format used in the code.
+For a source file whose name contains spaces, put the filename in quotes:
 
-## What I Am Learning
+```bash
+g++ -std=c++17 "Priems Mst.cpp" -o prim_mst
+./prim_mst
+```
 
-Through these programs, I am practicing problem-solving, recursion, graph traversal, greedy techniques, dynamic programming, and other important concepts in DSA.
+On Windows, run the compiled executable with its `.exe` extension, for example `lcs.exe`.
 
-This repository is part of my learning journey, and I will update it as I practice more algorithms and improve my code.
+Some programs expect input from the keyboard. Read the prompts in the terminal and provide the input requested by that program. The exact input format and output differ by source file.
 
-## Language
+## Suggested learning path
 
-- C++
+1. Start with **BFS** and **DFS** to practice graph traversal.
+2. Explore **Dijkstra** and **Bellman–Ford** to compare shortest-path approaches.
+3. Study **LCS**, **LIS**, **edit distance**, and **knapsack** for dynamic programming.
+4. Compare **Prim** and **Kruskal** for minimum spanning trees.
+5. Trace the **BST** operations using a few sample values.
+
+## Learning goals
+
+- Practice problem-solving and core data structures and algorithms
+- Understand the ideas behind each implementation
+- Improve naming, documentation, and test cases as the repository grows
+
+## Feedback
+
+If you find a bug or have a suggestion, feel free to open a GitHub issue with the filename, example input, expected result, and actual result. Clear, reproducible examples make problems easier to investigate.
+
+---
+
+**Language:** C++
